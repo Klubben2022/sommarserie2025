@@ -512,7 +512,6 @@
         <nav class="nav-buttons">
             <button class="nav-button" onclick="showScheduleView()">📋 Spelschema</button>
             <button class="nav-button active" onclick="showResultsView()">📊 Rapportera Resultat</button>
-            <button class="nav-button" onclick="showRankingView()">🏆 Ranking</button>
             <button class="nav-button" onclick="showStatsView()">📈 Statistik</button>
         </nav>
     </div>
@@ -574,7 +573,7 @@
                                 <td>1</td>
                                 <td>19 maj</td>
                                 <td>18:00</td>
-                                <td>Kristoffer Arvidsson & Dennis Frånberg</td>
+                                <td>Kristoffer Arvidsson & Dennis Fränberg</td>
                                 <td>Ahmedin Murtezic & Christer Sjölander</td>
                                 <td><em>Jonas Lidén</em></td>
                                 <td>GLS</td>
@@ -584,7 +583,7 @@
                                 <td>26 maj</td>
                                 <td>18:00</td>
                                 <td>Christer Sjölander & Jonas Lidén</td>
-                                <td>Ahmedin Murtezic & Dennis Frånberg</td>
+                                <td>Ahmedin Murtezic & Dennis Fränberg</td>
                                 <td><em>Kristoffer Arvidsson</em></td>
                                 <td>GLS</td>
                             </tr>
@@ -592,7 +591,7 @@
                                 <td>3</td>
                                 <td>2 juni</td>
                                 <td>18:00</td>
-                                <td>Dennis Frånberg & Jonas Lidén</td>
+                                <td>Dennis Fränberg & Jonas Lidén</td>
                                 <td>Kristoffer Arvidsson & Ahmedin Murtezic</td>
                                 <td><em>Christer Sjölander</em></td>
                                 <td>GLS</td>
@@ -603,7 +602,7 @@
                                 <td>18:00</td>
                                 <td>Ahmedin Murtezic & Jonas Lidén</td>
                                 <td>Christer Sjölander & Kristoffer Arvidsson</td>
-                                <td><em>Dennis Frånberg</em></td>
+                                <td><em>Dennis Fränberg</em></td>
                                 <td>GLS</td>
                             </tr>
                             <tr>
@@ -611,13 +610,13 @@
                                 <td>16 juni</td>
                                 <td>18:00</td>
                                 <td>Jonas Lidén & Kristoffer Arvidsson</td>
-                                <td>Christer Sjölander & Dennis Frånberg</td>
+                                <td>Christer Sjölander & Dennis Fränberg</td>
                                 <td><em>Ahmedin Murtezic</em></td>
                                 <td>GLS</td>
                             </tr>
                         </tbody>
                     </table>
-                    <p><strong>Spelare:</strong> Christer Sjölander, Ahmedin Murtezic, Dennis Frånberg, Kristoffer Arvidsson, Jonas Lidén</p>
+                    <p><strong>Spelare:</strong> Christer Sjölander, Ahmedin Murtezic, Dennis Fränberg, Kristoffer Arvidsson, Jonas Lidén</p>
                     <p><em>Varje spelare byter partner varje vecka och vilar en vecka under turneringen (4 veckor).</em></p>
                 </div>
 
@@ -974,15 +973,15 @@
             herr1: {
                 weeks: {
                     1: [
-                        'Kristoffer Arvidsson & Dennis Frånberg',
+                        'Kristoffer Arvidsson & Dennis Fränberg',
                         'Ahmedin Murtezic & Christer Sjölander'
                     ],
                     2: [
                         'Christer Sjölander & Jonas Lidén',
-                        'Ahmedin Murtezic & Dennis Frånberg'
+                        'Ahmedin Murtezic & Dennis Fränberg'
                     ],
                     3: [
-                        'Dennis Frånberg & Jonas Lidén',
+                        'Dennis Fränberg & Jonas Lidén',
                         'Kristoffer Arvidsson & Ahmedin Murtezic'
                     ],
                     4: [
@@ -991,15 +990,15 @@
                     ],
                     5: [
                         'Jonas Lidén & Kristoffer Arvidsson',
-                        'Christer Sjölander & Dennis Frånberg'
+                        'Christer Sjölander & Dennis Fränberg'
                     ]
                 },
-                players: ['Christer Sjölander', 'Ahmedin Murtezic', 'Dennis Frånberg', 'Kristoffer Arvidsson', 'Jonas Lidén'],
+                players: ['Christer Sjölander', 'Ahmedin Murtezic', 'Dennis Fränberg', 'Kristoffer Arvidsson', 'Jonas Lidén'],
                 restingPlayers: {
                     1: 'Jonas Lidén',
                     2: 'Kristoffer Arvidsson', 
                     3: 'Christer Sjölander',
-                    4: 'Dennis Frånberg',
+                    4: 'Dennis Fränberg',
                     5: 'Ahmedin Murtezic'
                 }
             },
@@ -1152,13 +1151,6 @@
             setActiveNavButton(1);
         }
 
-        function showRankingView() {
-            hideAllViews();
-            document.getElementById('results-view').style.display = 'block';
-            document.getElementById('page-title').textContent = 'Ranking';
-            document.getElementById('division-tabs').style.display = 'flex';
-            setActiveNavButton(2);
-        }
 
         function showStatsView() {
             hideAllViews();
