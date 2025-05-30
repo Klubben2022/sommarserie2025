@@ -507,7 +507,7 @@
     <div class="header">
         <div class="logo">
             KLUBBEN
-            <div class="logo-sub">Göteborg</div>
+            <div class="logo-sub">Gnosjö</div>
         </div>
         <nav class="nav-buttons">
             <button class="nav-button" onclick="showScheduleView()">📋 Spelschema</button>
